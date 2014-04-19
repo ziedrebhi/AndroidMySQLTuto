@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+     <TextView
+         android:id="@+id/textView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="15dp"
+         android:gravity="center_horizontal"
+         android:padding="8dp"
+         android:text=" Editer / Supprimer "
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+    <EditText
+        android:id="@+id/col1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        
+        android:hint="valeur col1">
+
+ 
+    </EditText> <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+    <EditText
+        android:id="@+id/col2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="valeur col2">
+
+ 
+    </EditText>
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+    <EditText
+        android:id="@+id/col3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="valeur col3"/>
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+    <EditText
+        android:id="@+id/col4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="valeur col4" />
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/editer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Editer" 
+             android:drawableLeft="@drawable/edit"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Enregistrer"
+            android:drawableLeft="@drawable/add"
+             />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/supp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supprimer"
+         android:drawableLeft="@drawable/cancel"
+         />
+
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+         />
+
+</LinearLayout>

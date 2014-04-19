@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Bienvenue! \n Ajoutez des données"
+        android:padding="8dp"
+        android:layout_margin="15dp"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+    <EditText
+        android:id="@+id/col2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="valeur col2">
+
+        <requestFocus />
+    </EditText>
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+    <EditText
+        android:id="@+id/col3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="valeur col3"/>
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+    <EditText
+        android:id="@+id/col4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="valeur col4" />
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Annuler" 
+             android:drawableLeft="@drawable/cancel"/>
+
+        <Button
+            android:id="@+id/ajout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Ajouter"
+             android:drawableLeft="@drawable/add" />
+    </LinearLayout>
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+         />
+    <Button
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste"
+        android:drawableLeft="@drawable/list" />
+
+</LinearLayout>
